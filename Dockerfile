@@ -17,7 +17,7 @@ RUN echo "allowed_hosts = *" >> /etc/apt-cacher/apt-cacher.conf
 RUN echo "distinct_namespaces = 1" >> /etc/apt-cacher/apt-cacher.conf
 
 # extend ubuntu release names (and keep adding future versions...)
-ENV UBUNTU_RELEASE_NAMES dapper, edgy, feisty, gutsy, hardy, intrepid, jaunty, karmic, lucid, maverick, natty, oneiric, precise, quantal, trusty, utopic, vivid
+ENV UBUNTU_RELEASE_NAMES dapper, edgy, feisty, gutsy, hardy, intrepid, jaunty, karmic, lucid, maverick, natty, oneiric, precise, quantal, trusty, utopic, vivid, xenial, yakkety, zesty
 
 ADD run.sh /
 ENTRYPOINT ["/run.sh"]
